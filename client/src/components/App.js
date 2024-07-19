@@ -1,8 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 
+import PaymentCalculator from "./PaymentCalculator/PaymentCalculator";
+import PaymentCardDiv from "./PaymentCalculator/PaymentCardDiv";
+
+import './PaymentCalculator/Cards.css'
+
 function App() {
-  return <h1>Project Client</h1>;
+
+  // Actual card state data
+  const [cardData, setCardData] = useState({
+    purchaseDate: '',
+    numberOfPayments: '',
+    totalAmount: ''
+  })
+
+  console.log(cardData)
+
+
+  return (
+    <div>
+      <PaymentCalculator setCardData={setCardData} />
+      <div className="container">
+        <PaymentCardDiv cardData={cardData} />
+
+      </div>
+
+    </div>
+  )
 }
 
 export default App;
