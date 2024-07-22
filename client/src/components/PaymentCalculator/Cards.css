@@ -39,3 +39,28 @@
     left: 40%;
     top: 200px
 }
+
+.card {
+    background-color: rgb(241, 210, 170);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    /* grid-template-columns: 1fr, 1fr; */
+    grid-gap: 20px;
+
+}
+
+/* .cards {
+    background-color: red;
+} */
+
+/* .card-payment {
+    position: relative;
+    left: 50%;
+} */
+
+.card-date {
+    padding-left: 5px;
+}
