@@ -30,9 +30,12 @@ const PaymentCardDiv = ({ cardData }) => {
 
     return (
         <div className="Cards">
-            {dataForCards.map((item) => {
+            {dataForCards.length !== 0 ? dataForCards.map((item) => {
                 return (<Card key={item} paymentDate={item.paymentDate} amount={item.amount} />)
-            })}
+            })
+                :
+                <h3>Submit Payment Selection to Display Payments</h3>
+            }
         </div>
     )
 }

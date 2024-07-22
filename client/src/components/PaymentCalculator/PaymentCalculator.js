@@ -27,16 +27,16 @@ function PaymentCalculator({ setCardData }) {
     return (
         <>
             <form onSubmit={onSubmitOfForm}>
-                <label>Date of Purchase:
-                    <input name='purchaseDate' type="date" onChange={onChangeOfForm} value={paymentForm.purchaseDate} />
+                <label style={{ padding: '10px' }}>Date of Purchase:
+                    <input style={{ padding: '8px', margin: '3px' }} name='purchaseDate' type="date" onChange={onChangeOfForm} value={paymentForm.purchaseDate} />
                 </label>
-                <label># of Payments:
-                    <input name='numberOfPayments' type="number" onChange={onChangeOfForm} value={paymentForm.numberOfPayments} />
+                <label style={{ padding: '10px' }}># of Payments:
+                    <input style={{ padding: '8px', margin: '3px' }} name='numberOfPayments' type="number" onChange={onChangeOfForm} value={paymentForm.numberOfPayments} />
                 </label>
-                <label>Total Amount:
-                    <input name='totalAmount' type="number" onChange={onChangeOfForm} value={paymentForm.totalAmount} />
+                <label style={{ padding: '10px' }}>Total Amount:
+                    <input style={{ padding: '8px', margin: '3px' }} name='totalAmount' type="number" onChange={onChangeOfForm} value={paymentForm.totalAmount} />
                 </label>
-                <button type='submit'>Submit</button>
+                <button style={{ height: '20px' }} type='submit'>Submit</button>
             </form>
         </>
     )

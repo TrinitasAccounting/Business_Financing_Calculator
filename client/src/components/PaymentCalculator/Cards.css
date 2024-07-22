@@ -28,6 +28,7 @@
     margin-top: 20vh;
 } */
 
+/* Styling for the outer container of the cards */
 .container {
     background-color: #ded0d0;
     width: 500px;
@@ -40,6 +41,7 @@
     top: 200px
 }
 
+/* Styling for the individual cards  */
 .card {
     background-color: rgb(241, 210, 170);
     border: 2px solid black;
@@ -63,4 +65,12 @@
 
 .card-date {
     padding-left: 5px;
+}
+
+.payment-form {
+    background-color: rgb(209, 186, 231);
+    width: 1000px;
+    position: relative;
+    left: 31%;
+    top: 200px;
 }

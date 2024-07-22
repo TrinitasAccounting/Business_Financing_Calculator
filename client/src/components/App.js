@@ -20,7 +20,9 @@ function App() {
 
   return (
     <div>
-      <PaymentCalculator setCardData={setCardData} />
+      <div className='payment-form'>
+        <PaymentCalculator setCardData={setCardData} />
+      </div>
       <div className="container">
         <PaymentCardDiv cardData={cardData} />
 
